@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="440.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMain">
+   <children>
+      <AnchorPane layoutX="-6.0" prefHeight="440.0" prefWidth="586.0">
+         <children>
+            <Button layoutX="254.0" layoutY="265.0" mnemonicParsing="false" onAction="#onClickButton" text="Button" />
+       
+       
+       
+            <TextField fx:id="txtnumber1" layoutX="205.0" layoutY="101.0" />
+            <TextField fx:id="txtnumber2" layoutX="205.0" layoutY="178.0" />
+            <RadioButton fx:id="RBAdd" layoutX="439.0" layoutY="97.0" mnemonicParsing="false" onAction="#ops" text="+">
+               <toggleGroup>
+                  <ToggleGroup fx:id="g" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="RBsub" layoutX="439.0" layoutY="134.0" mnemonicParsing="false" onAction="#ops" text="-" toggleGroup="$g" />
+            <RadioButton fx:id="RBmulti" layoutX="439.0" layoutY="174.0" mnemonicParsing="false" onAction="#ops" text="*" toggleGroup="$g" />
+            <RadioButton fx:id="RBdiv" layoutX="440.0" layoutY="217.0" mnemonicParsing="false" onAction="#ops" text="/" toggleGroup="$g" />
+            <Label fx:id="lblResult" layoutX="266.0" layoutY="47.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
